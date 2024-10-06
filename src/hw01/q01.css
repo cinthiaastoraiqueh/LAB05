@@ -1,83 +1,46 @@
-.container-1 {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  color: white;
-  text-align: center;
-  order: 9;
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
 }
 
-.container-2 {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  color: white;
-  text-align: center;
-  order: 2;
+h1 {
+  text-align: left; /* Alinea el título a la izquierda */
+  font-weight: bold;
+  margin-left: 5px; /* Ajusta el margen para que quede alineado con los cuadros */
 }
 
-.container-3 {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  color: white;
-  text-align: center;
-  order: 2;
-}
-
-.container-4 {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  order: 2;
-}
-
-.container-5 {
-  width: 100px;
-  height: 100px;
-  background-color: orange;
-  color: white;
-  text-align: center;
-  order: -1;
-}
-
-.container-6 {
-  width: 100px;
-  height: 100px;
-  background-color: brown;
-  color: white;
-  text-align: center;
-  order: 2;
-}
-
-.container-7 {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  color: white;
-  text-align: center;
-  order: 2;
-}
-
-.container-8 {
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-  color: white;
-  text-align: center;
-  order: 2;
-}
-
-.container-9 {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
-  color: white;
-  text-align: center;
-  order: 1;
-}
-
+/* Contenedor principal */
 .parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinea los cuadros al inicio */
+  width: 300px;
+  margin: 0; /* Elimina el auto-centrado */
+  padding-left: 5px; /* Alinea el contenedor con el título */
 }
+
+/* Estilos comunes para los elementos hijos */
+.parent > div {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Para posicionar el número en la parte superior */
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+
+/* Colores específicos para cada div */
+.container-1 { background-color: red; }
+.container-2 { background-color: blue; }
+.container-3 { background-color: red; }
+.container-4 { background-color: black; }
+.container-5 { background-color: orange; }
+.container-6 { background-color: brown; }
+.container-7 { background-color: green; }
+.container-8 { background-color: cyan; }
+.container-9 { background-color: lightgreen; }

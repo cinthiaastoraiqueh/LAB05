@@ -1,74 +1,85 @@
-.container-1 {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: left;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* Contenedor principal */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  grid-template-rows: 100px 100px 100px 100px; /* 4 filas de 100px cada una */
+  gap: 5px; /* Espacio entre las celdas */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Estilos comunes para los elementos hijos */
+.grid-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Definición específica para cada contenedor */
+.container-1 {
+  grid-column: 1 / 5; /* Ocupa toda la primera fila */
+  grid-row: 1 / 2;
+  background-color: red;
 }
 
 .container-2 {
-  width: 100px;
-  height: 100px;
+  grid-column: 1 / 2; /* Columna 1 */
+  grid-row: 2 / 4; /* Ocupa la segunda y tercera fila */
   background-color: blue;
-  color: white;
-  text-align: center;
 }
 
 .container-3 {
-  width: 100px;
-  height: 100px;
+  grid-column: 2 / 3; /* Columna 2 y 3 */
+  grid-row: 2 / 4; /* Segunda fila */
   background-color: lightgreen;
-  color: white;
-  text-align: center;
 }
 
 .container-4 {
-  width: 100px;
-  height: 100px;
+  grid-column: 3 / 5; /* Columna 1 */
+  grid-row: 2 / 3; /* Tercera fila */
   background-color: black;
-  color: white;
-  text-align: center;
 }
 
 .container-5 {
-  width: 100px;
-  height: 100px;
+  grid-column: 3 / 3; /* Columna 2 */
+  grid-row: 3 / 4; /* Tercera fila */
   background-color: orange;
-  color: white;
-  text-align: center;
 }
 
 .container-6 {
-  width: 100px;
-  height: 100px;
+  grid-column: 4 / 5; /* Columna 3 */
+  grid-row: 3 / 4; /* Tercera fila */
   background-color: brown;
-  color: white;
-  text-align: center;
 }
 
 .container-7 {
-  width: 100px;
-  height: 100px;
+  grid-column: 1 / 2; /* Columna 1 */
+  grid-row: 4 / 5; /* Cuarta fila */
   background-color: green;
-  color: white;
-  text-align: center;
 }
 
 .container-8 {
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-  color: white;
-  text-align: center;
+  grid-column: 2 / 3; /* Columna 2 */
+  grid-row: 4 / 5; /* Cuarta fila */
+  background-color: cyan;
 }
 
 .container-9 {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
-  color: white;
-  text-align: center;
+  grid-column: 3 / 5; /* Columna 3 y 4 */
+  grid-row: 4 / 5; /* Cuarta fila */
+  background-color: lightgreen;
 }
-
-.parent {
-}  
